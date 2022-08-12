@@ -12,7 +12,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get signug" do
-    get pages_signug_url
+    get pages_signup_url
     assert_response :success
   end
 

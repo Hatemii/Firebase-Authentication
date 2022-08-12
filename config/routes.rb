@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   
   get "/", to: 'pages#index'
   get "/home", to: 'pages#home'
-  get "signup", to: 'pages#signug'
-  get "login", to: 'pages#login'
+  get "/signup", to: 'pages#signup'
+  get "/login", to: 'pages#login'
 
   post "/login", to: 'pages#login'
-  post "logout", to: 'pages#logout'
-  post "signup", to: 'pages#signug'
+  post "/logout", to: 'pages#logout'
+  post "/signup", to: 'pages#signup'
 
 end
