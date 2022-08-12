@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   root 'pages#index'
-  get 'pages/home'
-  get 'pages/signug'
-  get 'pages/login'
+  
+  get "/", to: 'pages#index'
+  get "/home", to: 'pages#home'
+  get "signup", to: 'pages#signug'
+  get "login", to: 'pages#login'
+
+  post "/login", to: 'pages#login'
+  post "logout", to: 'pages#logout'
+  post "signup", to: 'pages#signug'
+
 end
